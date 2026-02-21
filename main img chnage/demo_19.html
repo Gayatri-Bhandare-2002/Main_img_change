@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.box{
+			height:400px;
+			width:400px;
+			float:left;
+			background-color:white;
+		}
+		.box img{
+			height:100%;
+			width:100%;
+		}
+		.box_img{
+			height:400px;
+			width:200px;
+			float:left;
+			background-color:white;
+		}
+		.box_img img{
+			width:100%;
+			height:25%;
+			float:left;
+			border: 3px solid black;
+			box-sizing: border-box;
+		}
+		.main{
+			margin-top: 100px;
+			margin-left: 300px;
+		}
+		.main h1{
+			margin-top: 50px;
+			margin-left: 200px;
+		}
+	</style>
+</head>
+<body class="main">
+	<h1>Main Image Change</h1>
+<div class="box">
+	<img src="https://in.canon/media/image/2024/07/17/3d47abeaf9574a9ba9401c6ff2ca7bb1_EOS+R5+Mark+II+%26+RF24-105mm+f4L+IS+USM+Front+Slant.png" id="img">
+</div>
+
+<div class="box_img">
+	<img src="https://in.canon/media/image/2024/07/17/3d47abeaf9574a9ba9401c6ff2ca7bb1_EOS+R5+Mark+II+%26+RF24-105mm+f4L+IS+USM+Front+Slant.png" alt="" id="img1" onclick="img1()">
+
+	<img src="https://petapixel.com/assets/uploads/2022/09/canon-5d-mark-iv-dslr-800x420.jpg" id="img2" onclick="img2()">
+
+	<img src="https://www.adobe.com/ie/creativecloud/photography/discover/media_1b4507ec1fa10efefcbe23c58bea28edf67c4f402.png?width=750&format=png&optimize=medium" id="img3" onclick="img3()">
+
+	<img src="https://www.adorama.com/alc/wp-content/uploads/2021/04/photography-camera-types-feature.jpg" id="img4" onclick="img4()">
+</div>
+<script type="text/javascript">
+	function img1(){
+		var a=document.getElementById('img1').getAttribute('src');
+		document.getElementById('img').setAttribute('src',a);
+	}
+	function img2(){
+		var a=document.getElementById('img2').getAttribute('src');
+		document.getElementById('img').setAttribute('src',a);
+	}
+	function img3(){
+		var a=document.getElementById('img3').getAttribute('src');
+		document.getElementById('img').setAttribute('src',a);
+	}
+	function img4(){
+		var a=document.getElementById('img4').getAttribute('src');
+		document.getElementById('img').setAttribute('src',a);
+	}
+</script>
+</body>
+</html>
